@@ -23,10 +23,11 @@ public class MainActivity extends AppCompatActivity {
 
         // train classifier on app start
         CodeProcessor.init(this);
-        AjLatexMath.init(this); // init library: load fonts, create paint, etc.
+        // init library: load fonts, create paint, etc.
+        AjLatexMath.init(this);
 
         List<Attachment> attachments = new ArrayList<>();
-        attachments.add(new ExampleAttachment("Android Image", "53ce1", true, "http://tse1.mm.bing.net/th?id=OIP.M24baa78c1fb80a71891ce775d11e038ao0&w=166&h=166&c=7&qlt=90&o=4&pid=1.7"));
+        attachments.add(new ExampleAttachment("Android Image", "53ce1", true, "http://www.pptbz.com/pptpic/UploadFiles_6909/201211/2012111719294197.jpg"));
         attachments.add(new ExampleAttachment("Here is a link", "bc41a", false, "https://google.com"));
 
         FlexibleRichTextView flexibleRichTextView = (FlexibleRichTextView) findViewById(R.id.frtv);
